@@ -1,0 +1,36 @@
+.custom-img {
+    height: 300px; /* Set a fixed height */
+    width: auto; /* Allow width to adjust automatically */
+    max-height: 80%; /* Prevent excessive scaling */
+    display: block; /* Ensures proper alignment */
+    object-fit: cover; /* Adjusts how the image fills the space */
+}
+
+@font-face {
+    font-family: 'Neuropol';
+    src: url('Neuropol.otf') format('truetype'); /* Adjust path if needed */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.neuropol-text {
+    font-family: 'Neuropol', sans-serif;
+    font-size: 12px; /* Adjust size as needed */
+    font-weight: bold;
+    color: #333; /* Customize text color */
+}
+
+.carousel-container {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+.carousel-item img {
+    max-width: 100%; /* Prevents stretching */
+    max-height: 80vh; /* Adjust image size relative to screen */
+    object-fit: cover; /* Ensures the image covers the available space without distortion */
+    margin: auto; /* Centers image inside carousel */
+    display: block;
+}
